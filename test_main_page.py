@@ -11,6 +11,6 @@ def test_guest_can_go_to_login_page(browser):
 
 def test_guest_should_see_login_link(browser):
     link = "http://selenium1py.pythonanywhere.com/"
-    page = MainPage(browser, link)   # инициализация Page Object, передача в конструктор экземпляр драйвера и url адрес
-    page.open()                      # открытие страницы
-    page.should_be_login_link()      # выполнение метода проверки наличия ссылки
+    page = MainPage(browser, link)
+    page.open()
+    page.should_be_login_link()
