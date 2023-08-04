@@ -34,7 +34,7 @@ def test_guest_cant_see_product_in_basket_opened_from_main_page(browser):
     page.open()                           # открытие страницы
     page.go_to_basket_page()              # переход в корзину
     basket_page = BasketPage(browser, browser.current_url)
-    basket_page.sould_be_empty_basket()   # проверка наличия элемента с сообщением о том, что корзина пуста
+    basket_page.should_be_empty_basket()   # проверка наличия элемента с сообщением о том, что корзина пуста
     # отрицательная проверка
-    # basket_page.sould_be_empty_basket_message()
+    # basket_page.should_be_empty_basket_message()
     # проверка отсутствия элемента с сообщением о том, что корзина пуста
